@@ -1,0 +1,77 @@
+<svg width="1000" height="240" viewBox="0 0 1000 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0505"/>
+      <stop offset="100%" stop-color="#0a0202"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="240" fill="url(#bg)"/>
+
+  <!-- top status bar, like level/cred readout -->
+  <rect x="0" y="0" width="1000" height="30" fill="#140505"/>
+  <line x1="0" y1="30" x2="1000" y2="30" stroke="#5c1414" stroke-width="1"/>
+  <text x="20" y="19" font-family="Consolas, monospace" font-size="10" letter-spacing="1" fill="#c94040">LVL 10</text>
+  <text x="90" y="19" font-family="Consolas, monospace" font-size="10" letter-spacing="1" fill="#6b2020">CRED 15,004,251</text>
+  <text x="500" y="19" text-anchor="middle" font-family="Consolas, monospace" font-size="10" letter-spacing="4" fill="#8a2a2a">PROFILE // TOOLTIP</text>
+  <text x="980" y="19" text-anchor="end" font-family="Consolas, monospace" font-size="10" letter-spacing="1" fill="#6b2020">DATA LINK ACTIVE</text>
+
+  <!-- left panel: skill list style -->
+  <rect x="20" y="46" width="220" height="176" fill="none" stroke="#4a1414" stroke-width="1"/>
+  <text x="30" y="62" font-family="Consolas, monospace" font-size="9" letter-spacing="2" fill="#7a2424">SORT BY: RELEVANCE</text>
+
+  <rect x="26" y="72" width="208" height="26" fill="#8c1616"/>
+  <text x="34" y="89" font-family="Consolas, monospace" font-size="10" fill="#1a0505">.NET_DEVELOPER</text>
+  <text x="225" y="89" text-anchor="end" font-family="Consolas, monospace" font-size="9" fill="#1a0505">LVL 3</text>
+
+  <rect x="26" y="102" width="208" height="22" fill="none" stroke="#3a1010" stroke-width="1"/>
+  <text x="34" y="116" font-family="Consolas, monospace" font-size="9" fill="#8a3030">ASP.NET_CORE</text>
+  <text x="225" y="116" text-anchor="end" font-family="Consolas, monospace" font-size="9" fill="#5c2020">3/3</text>
+
+  <rect x="26" y="128" width="208" height="22" fill="none" stroke="#3a1010" stroke-width="1"/>
+  <text x="34" y="142" font-family="Consolas, monospace" font-size="9" fill="#8a3030">FLUTTER_MOBILE</text>
+  <text x="225" y="142" text-anchor="end" font-family="Consolas, monospace" font-size="9" fill="#5c2020">3/3</text>
+
+  <rect x="26" y="154" width="208" height="22" fill="none" stroke="#3a1010" stroke-width="1"/>
+  <text x="34" y="168" font-family="Consolas, monospace" font-size="9" fill="#8a3030">DARKNOVEL_API</text>
+  <text x="225" y="168" text-anchor="end" font-family="Consolas, monospace" font-size="9" fill="#5c2020">3/3</text>
+
+  <!-- center: name as the "item" -->
+  <text x="280" y="66" font-family="Consolas, monospace" font-size="9" letter-spacing="2" fill="#c94040">ENGINEERING</text>
+
+  <text x="503" y="120" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="42" font-weight="700" fill="#4a0808">NGO THIEU KHANG</text>
+  <text x="500" y="117" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="42" font-weight="700" fill="#ff3b3b" filter="url(#glow)">NGO THIEU KHANG</text>
+
+  <text x="500" y="145" text-anchor="middle" font-family="Consolas, monospace" font-size="13" letter-spacing="3" fill="#b83030">SOFTWARE ENGINEER — LEVEL 3RD YEAR</text>
+
+  <!-- wireframe schematic lines, like the weapon render -->
+  <g stroke="#7a2424" stroke-width="1" fill="none" opacity="0.7">
+    <path d="M370,175 L410,165 L630,165 L660,178 L630,190 L410,190 Z"/>
+    <line x1="440" y1="165" x2="440" y2="190"/>
+    <line x1="480" y1="165" x2="480" y2="190"/>
+    <line x1="520" y1="165" x2="520" y2="190"/>
+    <line x1="560" y1="165" x2="560" y2="190"/>
+    <line x1="600" y1="165" x2="600" y2="190"/>
+  </g>
+
+  <!-- materials/status boxes bottom -->
+  <rect x="740" y="46" width="240" height="176" fill="none" stroke="#4a1414" stroke-width="1"/>
+  <text x="750" y="62" font-family="Consolas, monospace" font-size="9" letter-spacing="2" fill="#c94040">TOOLTIP</text>
+  <line x1="750" y1="70" x2="970" y2="70" stroke="#4a1414" stroke-width="1"/>
+  <text x="750" y="86" font-family="Consolas, monospace" font-size="10" fill="#d95050">HUFLIT SOFTWARE ENG.</text>
+  <text x="750" y="102" font-family="Consolas, monospace" font-size="9" fill="#8a3030">2023 — 2027</text>
+  <text x="750" y="118" font-family="Consolas, monospace" font-size="9" fill="#8a3030">GPA 3.40 / 4.00</text>
+  <text x="750" y="140" font-family="Consolas, monospace" font-size="9" fill="#6b2424">DARKNOVEL ECOSYSTEM</text>
+  <text x="750" y="154" font-family="Consolas, monospace" font-size="9" fill="#6b2424">WEB · API · MOBILE</text>
+  <rect x="750" y="196" width="210" height="18" fill="#5c1010"/>
+  <text x="855" y="209" text-anchor="middle" font-family="Consolas, monospace" font-size="9" letter-spacing="1" fill="#ffb3b3">FIND ON GITHUB</text>
+
+  <!-- corner ticks -->
+  <path d="M20,40 L20,46" stroke="#8c1616" stroke-width="2"/>
+  <path d="M980,40 L980,46" stroke="#8c1616" stroke-width="2"/>
+
+</svg>
